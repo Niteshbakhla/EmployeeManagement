@@ -1,19 +1,27 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import Login from './components/Auth/Login'
 import EmployeDashboard from './components/Dashboard/EmployeeDashboard'
 import LoginPage from './components/Auth/Logins'
 import AdminPanel from './components/Dashboard/AdminDashboard'
+import AllTasks from './others/AllTasks'
+import { getLocalStorage, setLocalStorage } from './utils/LocalStorage'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    // setLocalStorage()
+    getLocalStorage()
+  }, [])
 
   return (
     <>
-      {/* <Login /> */}
+      <Login />
       {/* <EmployeDashboard /> */}
 
       <AdminPanel />
+      {/* <AllTasks /> */}
+
 
     </>
   )
