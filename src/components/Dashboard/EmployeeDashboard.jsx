@@ -19,7 +19,7 @@ export default function EmployeDashboard() {
                                     </div>
 
                                     {/* Main Content */}
-                                    <div className="flex-1 flex flex-col ">
+                                    <div className="flex-1 flex flex-col  ">
                                                 <header className="bg-white shadow p-4 px-4 flex justify-between items-center">
                                                             <button className="text-blue-600 sm:hidden" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
                                                                         <FiMenu size={24} />
@@ -46,7 +46,24 @@ export default function EmployeDashboard() {
                                                             </div>
                                                 </main>
 
-                                                <TaskList />
+                                                <div className="flex-1 flex items-start flex-wrap justify-start content-start overflow-x-scroll  bg-black/10 rounded-3xl m-2">
+                                                            <TaskList />
+                                                            <TaskList />
+                                                            <TaskList />
+                                                            <TaskList />
+                                                            <TaskList />
+                                                            <TaskList />
+                                                            <TaskList />
+                                                            <TaskList />
+                                                            <TaskList />
+                                                            <TaskList />
+                                                            <TaskList />
+                                                            <TaskList />
+                                                            <TaskList />
+                                                            <TaskList />
+                                                            <TaskList />
+                                                          
+                                                </div>
 
                                     </div>
                         </div>
